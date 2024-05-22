@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* CSS khusus untuk media query */
+      @media only screen and (max-width: 768px) {
+        .container {
+          padding: 0 20px; /* Tambahkan padding agar konten tidak menyentuh tepi layar */
+        }
+        .img-container {
+          display: block; /* Mengatur gambar agar tampil dalam blok terpisah pada layar kecil */
+          margin: 20px auto; /* Pusatkan gambar pada layar kecil */
+        }
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      header {
+        background-color: rgb(168 85 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%; /* Tambahkan ini untuk memastikan header memenuhi lebar layar */
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%; /* Tambahkan ini untuk memastikan navbar memenuhi lebar layar */
+      }
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .navbar a:hover {
+        background-color: rgb(221, 150, 245);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        height: 100vh; /* Gunakan seluruh tinggi layar */
+        margin-top: -70px;
+      }
+
+      .container h1 {
+        font-size: 30px;
+      }
+
+      .img-container {
+        display: flex; /* Mengatur tata letak gambar menjadi flex */
+        gap: 10px; /* Memberikan jarak antara gambar-gambar */
+      }
+
+      .img-container img {
+        transition: transform 0.3s ease; /* Menambahkan transisi ke properti transform */
+      }
+
+      .img-container img:hover {
+        transform: scale(
+          0.9
+        ); /* Mengubah skala gambar menjadi 0.9 ketika kursor dihover */
+      }
+      /* CSS untuk animasi ketik */
+      .typewriter-text {
+        overflow: hidden; /* Menyembunyikan teks yang melebihi kotak */
+        border-right: 0.15em solid white; /* Membuat efek ketikan */
+        white-space: nowrap; /* Mengatur agar teks tidak berjalan ke baris baru */
+        margin: 0 auto; /* Pusatkan teks */
+        letter-spacing: 0.15em; /* Spasi antar huruf */
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.3s step-end infinite; /* Animasi ketik dan caret */
+      }
+
+      /* Animasi ketik */
+      @keyframes typing {
+        from {
+          width: 0; /* Memulai dengan lebar 0 */
+        }
+        to {
+          width: 50%; /* Mencapai lebar maksimum */
+        }
+      }
+
+      /* Animasi caret */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent; /* Teks tidak terlihat */
+        }
+        50% {
+          border-color: white; /* Warna caret saat muncul */
+        }
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technology</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html" onclick="disableLink(this)">Contact me</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 class="typewriter-text">For any Questions please drop a mail.</h1>
+      <p>Email: oseaalim@gmail.com</p>
+      <p>Phone: +6282171800910</p>
+      <div class="img-container">
+        <a
+          href="https://www.linkedin.com/in/-abdulalim/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/plumpy/48/linkedin-circled.png"
+            alt="linkedin-circled"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/abdalim_?igsh=NnIwNmx3azhwbjZ4/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"
+            alt="instagram-new"
+          />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p>Created and Designed by Abdul Alim</p>
+    </footer>
+    <script>
+      function disableLink(link) {
+        link.style.pointerEvents = "none"; // Menonaktifkan klik pada tautan
+      }
+    </script>
+  </body>
+</html>

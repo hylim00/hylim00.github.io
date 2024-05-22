@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* CSS khusus untuk media query */
+      @media only screen and (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        .navbar a {
+          margin: 5px 0;
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+
+      /* CSS lainnya */
+      header {
+        background-color: rgb(168 85 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%; /* Lebar navbar penuh */
+        max-width: 1200px; /* Maksimum lebar navbar */
+        margin: 0 auto; /* Pusatkan navbar */
+      }
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .navbar a:hover {
+        background-color: rgb(221, 150, 245);
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column; /* Mengatur konten menjadi kolom */
+        align-items: center; /* Pusatkan konten secara horizontal */
+      }
+      .container h1 {
+        text-align: center;
+        margin: 50px auto;
+        font-size: 30px;
+      }
+      .project {
+        text-align: center;
+        margin-bottom: 20px; /* Tambahkan ruang di bawah judul */
+      }
+      .project h1 {
+        font-size: 50px;
+        margin-top: 20px; /* Tambahkan ruang di atas judul */
+      }
+      .design,
+      .webinar,
+      .hardiknas {
+        display: inline-block;
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px; /* Jarak antar kartu */
+        text-align: center;
+        vertical-align: top;
+      }
+      .design img,
+      .webinar img,
+      .hardiknas img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+      }
+      .design .content,
+      .webinar .content,
+      .hardiknas .content {
+        padding: 20px;
+        text-align: justify;
+      }
+      .design h1,
+      .webinar h1,
+      .hardiknas h1,
+      .design p,
+      .webinar p,
+      .hardiknas p {
+        margin: 0;
+        text-align: justify;
+      }
+      .design h1,
+      .webinar h1,
+      .hardiknas h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .design p,
+      .webinar p,
+      .hardiknas p {
+        font-size: small;
+        margin-bottom: 10px;
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technology</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html">Contact me</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Projects</h1>
+      <!-- Pindahkan judul di sini -->
+      <div class="project">
+        <!-- Hapus judul dari sini -->
+        <div class="design" data-aos="fade-up" data-aos-duration="3000">
+          <img src="dist/img/Logo project.png" alt="logo Budak Coding" />
+          <div class="content">
+            <h1><strong>Logo Budak Coding</strong></h1>
+            <p>
+              The logo blends coding technology with Melayu culture, symbolized
+              by the "topi tanjak". It represents the "Budak Coding" community
+              from Riau, merging both technological and Melayu cultural elements
+              for a distinctive identity.
+            </p>
+            <p>Client Aqil Farras (Founder)</p>
+          </div>
+        </div>
+        <div class="webinar" data-aos="fade-up" data-aos-duration="3000">
+          <img src="dist/img/Webinar Budak Coding.jpg" alt="Webinar" />
+          <div class="content">
+            <h1><strong>Webinar poster design</strong></h1>
+            <p>
+              Webinar on Career Development in Technology Fields in the Era of
+              Industry 5.0 with Experienced Speakers, attended by Computer
+              Science Students of 2022. Hosted by Budak Coding.co, providing
+              insights for aspiring tech enthusiasts.
+            </p>
+            <p>Client Budak Coding.co</p>
+          </div>
+        </div>
+        <div class="hardiknas" data-aos="fade-up" data-aos-duration="3000">
+          <img src="dist/img/Hardiknas2024.png" alt="Hardiknas2024" />
+          <div class="content">
+            <h1><strong>Hardiknas poster design</strong></h1>
+            <p>
+              Diskusi santai "Ngbrol Seru Bareng Dosen Teknik Informatika" di
+              Universitas Abdurrab pada Hardiknas 2024 untuk mahasiswa dan dosen
+              Teknik Informatika.
+            </p>
+            <p>Client Hima Teknik Informatika</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Created and Designed by Abdul Alim</p>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

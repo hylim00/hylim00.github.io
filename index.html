@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="about.html" href="about.html" />
+    <link rel="Technology.html" href="technology.html" />
+    <link rel="project.html" href="project.html" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="contactme.html" href="contactme.html" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      /* CSS khusus untuk media query */
+      @media only screen and (max-width: 768px) {
+        .container {
+          padding: 0 20px; /* Tambahkan padding agar konten tidak menyentuh tepi layar */
+        }
+        .img-container {
+          display: block; /* Mengatur gambar agar tampil dalam blok terpisah pada layar kecil */
+          margin: 20px auto; /* Pusatkan gambar pada layar kecil */
+        }
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .container {
+        margin: 0 auto; /* Pusatkan konten di tengah */
+        max-width: 1200px; /* Atur lebar maksimum konten */
+        display: flex; /* Mengatur tata letak kontainer utama */
+        align-items: center; /* Pusatkan konten secara vertikal */
+        justify-content: space-between; /* Letakkan konten di kedua ujung kontainer */
+        flex-wrap: wrap; /* Biarkan konten turun ke baris baru jika tidak cukup ruang */
+      }
+      .circular-border {
+        border-radius: 50%; /* Membuatnya menjadi lingkaran */
+        border: 3px solid transparent; /* Mengatur ketebalan garis */
+        background-image: radial-gradient(
+          circle,
+          rgb(70, 27, 110),
+          rgb(152, 116, 187),
+          rgb(168 85 247)
+        ); /* Gradasi warna */
+        padding: 10px; /* Menambahkan sedikit padding agar gradasi terlihat */
+        width: 20%; /* Mengatur lebar gambar */
+        max-width: 300px; /* Batasi lebar maksimum gambar */
+      }
+
+      .rr {
+        background: linear-gradient(to right, #646466, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      header {
+        background-color: rgb(168 85 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .navbar a:hover {
+        background-color: rgb(221, 150, 245);
+      }
+
+      /* Centering Hero Section */
+      #Home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technology</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html">Contact me</a>
+      </nav>
+    </header>
+    <!--Hero Section Start-->
+    <section id="Home" class="pt-36">
+      <div class="container">
+        <div
+          class="w-full lg:w-1/2 px-4"
+          data-aos="fade-right"
+          data-aos-duration="6000"
+        >
+          <h1 class="text-base font-semibold text-primary">
+            Hii 👋, My Name is
+            <span class="block font-bold text-dark text-4xl mt-1 rr"
+              >Abdul Alim</span
+            >
+          </h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-5">
+            UI/UX Developer | Design Graphic.
+          </h2>
+          <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+            Designing Digital Experiences with Purpose and Precision.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/-abdulalim/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
+            >LinkedIn
+          </a>
+        </div>
+        <div
+          class="w-full lg:w-1/2 px-4 img-container"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <div class="relative">
+            <!-- Tambahkan kelas circular-border untuk menerapkan garis lingkaran -->
+            <img
+              src="dist/img/Alim.png"
+              alt="profile"
+              class="max-w-full mx-auto circular-border"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Hero Section End-->
+    <footer>
+      <p>Created and Designed by Abdul Alim</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

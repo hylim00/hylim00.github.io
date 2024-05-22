@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 70px; /* Tambahkan padding-top untuk konten agar tidak tersembunyi di balik navbar */
+      }
+
+      header {
+        background-color: rgb(168 85 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        position: fixed; /* Tambahkan ini untuk membuat navbar tetap di atas */
+        top: 0; /* Atur posisi ke atas */
+        z-index: 1000; /* Tambahkan z-index agar navbar tetap berada di atas konten lainnya */
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%; /* Lebar navbar penuh */
+        max-width: 1200px; /* Maksimum lebar navbar */
+        margin: 0 auto; /* Pusatkan navbar */
+      }
+
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(221, 150, 245);
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 20px auto;
+      }
+
+      .tech,
+      .logo,
+      .tools {
+        text-align: center;
+        margin: 50px auto;
+      }
+
+      .tech h1 {
+        font-size: 30px;
+      }
+
+      .tech p {
+        font-size: small;
+        color: #5f5c5c;
+        margin: 0;
+      }
+
+      .top-row,
+      .bottom-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .top-row img,
+      .bottom-row img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .tools img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .navbar {
+          flex-direction: column; /* Ubah arah menu navigasi menjadi kolom */
+          align-items: center; /* Pusatkan menu navigasi secara horizontal */
+        }
+
+        header {
+          padding-bottom: 50px; /* Tambahkan padding bawah untuk memberikan ruang agar konten tidak tertutup oleh navbar */
+        }
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technology</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html">Contact me</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="tech" data-aos="fade-up" data-aos-duration="9000">
+        <h1>Tech Stack</h1>
+        <p>
+          The combination of technologies I use to build an application or
+          system.
+        </p>
+      </div>
+      <div class="logo">
+        <div class="top-row">
+          <img
+            src="https://img.icons8.com/color/144/html-5--v1.png"
+            alt="html-5--v1"
+            title="html5"
+          />
+          <img
+            src="https://img.icons8.com/color/144/css3.png"
+            alt="css3"
+            title="css3"
+          />
+          <img
+            src="https://img.icons8.com/color/144/javascript--v1.png"
+            alt="javascript--v1"
+            title="Javascript"
+          />
+        </div>
+
+        <div class="bottom-row">
+          <img
+            src="https://img.icons8.com/color/144/tailwind_css.png"
+            alt="tailwind_css"
+            title="tailwind"
+          />
+          <img
+            src="https://img.icons8.com/color/144/mysql-logo.png"
+            alt="mysql-logo"
+            title="mysql"
+          />
+          <img
+            width="70"
+            height="70"
+            src="https://img.icons8.com/ios-glyphs/30/bootstrap.png"
+            alt="bootstrap"
+          />
+        </div>
+      </div>
+      <div class="tech" data-aos="fade-up" data-aos-duration="10000">
+        <h1>Tools</h1>
+      </div>
+      <div class="tools">
+        <img
+          src="https://img.icons8.com/color/96/visual-studio-code-2019.png"
+          alt="visual-studio-code-2019"
+          title="Visual Studio Code"
+        />
+        <img
+          src="https://img.icons8.com/windows/96/github.png"
+          alt="github"
+          title="Github"
+        />
+        <img
+          width="65"
+          height="65"
+          src="https://img.icons8.com/color/48/adobe-illustrator--v1.png"
+          alt="adobe-illustrator--v1"
+        />
+        <img
+          src="https://img.icons8.com/color/96/figma--v1.png"
+          alt="figma--v1"
+          title="Figma"
+        />
+        <img
+          width="65"
+          height="65"
+          src="https://img.icons8.com/fluency/48/canva-app.png"
+          alt="canva-app"
+          title="Canva"
+        />
+        <img
+          src="https://img.icons8.com/color/96/adobe-photoshop--v1.png"
+          alt="adobe-photoshop--v1"
+          title="Adobe photoshop"
+        />
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <footer>
+      <p>Created and Designed by Abdul Alim</p>
+    </footer>
+  </body>
+</html>

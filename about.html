@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      /* General styles */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: rgb(168 85 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      nav a:hover {
+        background-color: rgb(221, 150, 245);
+      }
+      .section {
+        max-width: 800px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+        text-align: justify;
+      }
+      .section h1 {
+        font-size: 30px;
+      }
+      .section h2 {
+        font-size: 24px;
+      }
+      .section p {
+        font-size: small;
+        color: rgb(59, 59, 63);
+        margin: 5px 0;
+      }
+      .symbol {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Ubah posisi ke kiri */
+        font-size: x-small;
+        padding: 5px 0;
+        width: 100%; /* Menyesuaikan lebar */
+      }
+      .symbol span {
+        color: rgb(87, 87, 89);
+      }
+      .button {
+        display: inline-block;
+        background-color: #82f086;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .symbol hr {
+        margin: 0 10px;
+        border: none;
+        border-top: 1px solid rgb(87, 87, 89);
+        flex-grow: 1;
+      }
+
+      /* Responsive styles */
+      @media only screen and (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav a {
+          margin: 5px 0;
+        }
+        .symbol {
+          justify-content: center;
+        }
+        .symbol hr {
+          display: block; /* Menampilkan kembali garis */
+          width: 50%; /* Menyesuaikan lebar */
+        }
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technology</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html">Contact me</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div
+        class="section About"
+        data-aos="fade-up"
+        data-aos-duration="9000"
+        style="margin-top: 50px"
+      >
+        <h1>About me</h1>
+        <p>
+          "I am a student of Computer Engineering at Abdurrab University,
+          currently focusing on UI/UX Design and Web Development. I am actively
+          involved in campus activities and technology events. My interest in
+          UI/UX design and programming is fueled by a passion for technology. I
+          am committed to continuous learning and innovation. I believe that
+          technology and design have the power to create extraordinary digital
+          experiences. Interested in collaborating? I am ready to contribute in
+          the field of UI/UX Design and Web Development."
+        </p>
+      </div>
+      <div class="section Kampus" data-aos="fade-up">
+        <h1>Education</h1>
+        <h2><strong>Abdurrab University</strong></h2>
+        <p>Informatic Engineering</p>
+        <div class="symbol">
+          <span class="material-symbols-outlined">pin_drop</span>
+          <span>Riau, Pekanbaru</span>
+          <hr />
+          <span>2022 - Sekarang</span>
+        </div>
+        <button class="button">Ipk 3.68</button>
+      </div>
+      <div class="section Sekolah" data-aos="fade-up">
+        <h2><strong>SMK Al-Quran & Dakwah Alam</strong></h2>
+        <p>Agribisnis Perikanan</p>
+        <div class="symbol">
+          <span class="material-symbols-outlined">pin_drop</span>
+          <span>Jawa Tengah, Magelang</span>
+          <hr />
+          <span>2017-2020</span>
+        </div>
+      </div>
+      <div class="section Experience" data-aos="fade-up">
+        <h1>Work Experince</h1>
+        <h2><strong>One Street Food</strong></h2>
+        <p>Crew Event Organizer</p>
+        <div class="symbol">
+          <span class="material-symbols-outlined">pin_drop</span>
+          <span>Riau, Pekanbaru</span>
+          <hr />
+          <span>Sep 2022 - Jan 2024</span>
+        </div>
+        <button class="button">Parttime</button>
+      </div>
+      <div class="section Budakcoding" data-aos="fade-up">
+        <h2><strong>Budak Coding.co</strong></h2>
+        <p>Graphic Designer</p>
+        <div class="symbol">
+          <span class="material-symbols-outlined">pin_drop</span>
+          <span>Riau, Pekanbaru</span>
+          <hr />
+          <span>Jan 2023 - Jan 2024</span>
+        </div>
+        <button class="button">Internship</button>
+      </div>
+    </div>
+    <!--Hero Section End-->
+    <footer>
+      <p>Created and Designed by Abdul Alim</p>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
